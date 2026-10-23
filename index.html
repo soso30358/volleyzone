@@ -1,117 +1,256 @@
 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VOLLEYZONE</title>
+  <meta name="theme-color" content="#070b14">
+  <meta name="description" content="VOLLEYZONE — Discover volleyball rules, skills, rotations and training exercises.">
+  <title>VOLLEYZONE | Play Beyond Limits</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
-  <header>
-    <h1>🏐 VOLLEYZONE</h1>
-    <nav>
+  <div class="page-glow"></div>
+
+  <header class="navbar">
+    <a class="logo" href="#home">
+      <span class="logo-icon">V</span>
+      <span>VOLLEY<span class="accent">ZONE</span></span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Open navigation"
+      aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links" id="nav-links">
       <a href="#home">Home</a>
       <a href="#rules">Rules</a>
       <a href="#skills">Skills</a>
       <a href="#rotation">Rotation</a>
-      <a href="#training">Training</a>
       <a href="#exercises">Exercises</a>
-      <a href="#program">Training Program</a>
+      <a href="#program" class="nav-cta">Training <span>↗</span></a>
     </nav>
   </header>
 
-  <section id="home" class="hero">
-    <h2>Welcome to VOLLEYZONE</h2>
-    <p>Discover volleyball, learn the rules and improve your skills!</p>
-  </section>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content reveal">
+        <div class="eyebrow"><span class="live-dot"></span> THE VOLLEYBALL HUB</div>
+        <h1>PLAY BEYOND<br><span>LIMITS.</span></h1>
+        <p class="hero-description">
+          Master the game. Sharpen your skills. Own every point.
+          Your volleyball journey starts here.
+        </p>
+        <div class="hero-actions">
+          <a href="#skills" class="btn btn-primary">Explore the game <span>↗</span></a>
+          <a href="#program" class="btn btn-outline">Start training</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>06</strong><span>PLAYERS / TEAM</span></div>
+          <div><strong>03</strong><span>HITS MAX</span></div>
+          <div><strong>01</strong><span>TEAM. ONE GOAL.</span></div>
+        </div>
+      </div>
 
-  <section id="rules">
-    <h2>🏐 Volleyball Rules</h2>
-    <p>Deux équipes de six joueurs s'affrontent sur un terrain séparé par un filet.</p>
-    <p>Chaque équipe peut toucher le ballon trois fois avant de le renvoyer.</p>
-  </section>
+      <div class="hero-visual reveal">
+        <div class="hero-image"></div>
+        <div class="image-overlay"></div>
+        <div class="vertical-label">POWER · PRECISION · PASSION</div>
+        <div class="floating-card">
+          <span class="floating-icon">✦</span>
+          <div><strong>YOUR NEXT LEVEL</strong><small>Starts with practice.</small></div>
+        </div>
+        <div class="hero-number">01<span>/06</span></div>
+      </div>
+      <a class="scroll-cue" href="#rules">SCROLL TO EXPLORE <span>↓</span></a>
+    </section>
 
-  <section id="skills">
-    <h2>⭐ Basic Skills</h2>
-    <p>Service · Manchette · Passe · Attaque · Contre</p>
-  </section>
+    <section class="intro section-pad" id="rules">
+      <div class="section-heading reveal">
+        <span class="eyebrow">01 / THE BASICS</span>
+        <h2>KNOW THE <span>GAME.</span></h2>
+        <p>Understand the fundamentals before you dominate the court.</p>
+      </div>
 
-  <section id="rotation">
-    <h2>🔄 La Rotation</h2>
-    <p>Les joueurs tournent dans le sens des aiguilles d'une montre lorsqu'ils récupèrent le service.</p>
-    <div class="court">
-      <div>4<br>Avant gauche</div>
-      <div>3<br>Avant centre</div>
-      <div>2<br>Avant droite</div>
-      <div>5<br>Arrière gauche</div>
-      <div>6<br>Arrière centre</div>
-      <div>1<br>Arrière droite</div>
-    </div>
-  </section>
+      <div class="rules-grid">
+        <article class="info-card reveal">
+          <span class="card-number">01</span>
+          <div class="card-icon">🏐</div>
+          <h3>THE TEAMS</h3>
+          <p>Two teams of six players compete on opposite sides of the net.</p>
+        </article>
+        <article class="info-card reveal">
+          <span class="card-number">02</span>
+          <div class="card-icon">↗</div>
+          <h3>THREE HITS</h3>
+          <p>A team can use up to three contacts to return the ball over the net.</p>
+        </article>
+        <article class="info-card reveal">
+          <span class="card-number">03</span>
+          <div class="card-icon">⚡</div>
+          <h3>SCORE POINTS</h3>
+          <p>Win a rally to score a point. Sets are usually played to 25, with a two-point lead.</p>
+        </article>
+        <article class="info-card reveal">
+          <span class="card-number">04</span>
+          <div class="card-icon">↻</div>
+          <h3>ROTATION</h3>
+          <p>When the receiving team wins the rally and gains the serve, players rotate clockwise.</p>
+        </article>
+      </div>
+    </section>
 
-  <section id="training">
-    <h2>💪 Training</h2>
-    <p>Practice your serves, passes and teamwork regularly!</p>
-  </section>
+    <section class="skills-section section-pad" id="skills">
+      <div class="section-heading reveal">
+        <span class="eyebrow">02 / BUILD YOUR GAME</span>
+        <h2>MASTER THE <span>SKILLS.</span></h2>
+        <p>Every great rally starts with strong fundamentals.</p>
+      </div>
 
-<section id="exercises" class="training-section">
-  <h2>💪 Volleyball Exercises</h2>
-  <p>Improve your technique with these simple exercises!</p>
+      <div class="skills-grid">
+        <article class="skill-card skill-serve reveal">
+          <span class="skill-tag">01 — SERVE</span>
+          <div class="skill-bottom">
+            <h3>START<br>STRONG.</h3>
+            <p>Develop accuracy, consistency and confidence behind the line.</p>
+          </div>
+        </article>
+        <article class="skill-card skill-pass reveal">
+          <span class="skill-tag">02 — PASS</span>
+          <div class="skill-bottom">
+            <h3>CONTROL<br>THE BALL.</h3>
+            <p>Build a reliable first contact with balanced forearm passing.</p>
+          </div>
+        </article>
+        <article class="skill-card skill-set reveal">
+          <span class="skill-tag">03 — SET</span>
+          <div class="skill-bottom">
+            <h3>CREATE<br>THE PLAY.</h3>
+            <p>Improve hand positioning, timing and accurate ball placement.</p>
+          </div>
+        </article>
+        <article class="skill-card skill-spike reveal">
+          <span class="skill-tag">04 — SPIKE</span>
+          <div class="skill-bottom">
+            <h3>FINISH<br>THE POINT.</h3>
+            <p>Work on your approach, timing and controlled attacking technique.</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-  <div class="exercise-grid">
-    <article class="exercise-card">
-      <h3>🏐 Service</h3>
-      <p>Practice your serve and aim for different zones of the court.</p>
-      <span>10–15 minutes</span>
-    </article>
+    <section class="rotation-section section-pad" id="rotation">
+      <div class="section-heading reveal">
+        <span class="eyebrow">03 / COURT INTELLIGENCE</span>
+        <h2>OWN YOUR <span>POSITION.</span></h2>
+        <p>Six positions. One rotation. Understand where every player belongs.</p>
+      </div>
 
-    <article class="exercise-card">
-      <h3>🤲 Manchette</h3>
-      <p>Practice forearm passes against a wall or with a partner.</p>
-      <span>10 minutes</span>
-    </article>
+      <div class="rotation-layout">
+        <div class="court reveal" aria-label="Volleyball court positions">
+          <div class="court-zone front-zone">
+            <div class="position"><strong>4</strong><span>LEFT FRONT</span></div>
+            <div class="position"><strong>3</strong><span>MIDDLE FRONT</span></div>
+            <div class="position"><strong>2</strong><span>RIGHT FRONT</span></div>
+          </div>
+          <div class="court-zone back-zone">
+            <div class="position"><strong>5</strong><span>LEFT BACK</span></div>
+            <div class="position"><strong>6</strong><span>MIDDLE BACK</span></div>
+            <div class="position"><strong>1</strong><span>RIGHT BACK</span></div>
+          </div>
+          <div class="net-line"><span>THE NET</span></div>
+        </div>
 
-    <article class="exercise-card">
-      <h3>🙌 Passe</h3>
-      <p>Practice accurate overhead passes with a partner.</p>
-      <span>10 minutes</span>
-    </article>
+        <div class="rotation-info reveal">
+          <span class="eyebrow">THE ROTATION RULE</span>
+          <h3>MOVE AS ONE.</h3>
+          <p>When your team wins the right to serve from the receiving position, everyone rotates one position clockwise.</p>
+          <div class="rotation-step"><span>01</span><div><strong>Position 2 → 1</strong><small>Right front to right back</small></div></div>
+          <div class="rotation-step"><span>02</span><div><strong>Position 1 → 6</strong><small>Right back to middle back</small></div></div>
+          <div class="rotation-step"><span>03</span><div><strong>Continue clockwise</strong><small>6 → 5 → 4 → 3 → 2</small></div></div>
+        </div>
+      </div>
+    </section>
 
-    <article class="exercise-card">
-      <h3>🔥 Attaque</h3>
-      <p>Practice your approach, jump timing and arm movement safely.</p>
-      <span>10 minutes</span>
-    </article>
-  </div>
-</section>
+    <section class="exercises-section section-pad" id="exercises">
+      <div class="section-heading reveal">
+        <span class="eyebrow">04 / TRAIN WITH PURPOSE</span>
+        <h2>PUT IN THE <span>WORK.</span></h2>
+        <p>Focused practice builds confidence, control and consistency.</p>
+      </div>
 
-<section id="program" class="training-section">
-  <h2>📅 7-Day Training Program</h2>
-  <p>Un programme simple pour progresser progressivement.</p>
+      <div class="exercise-grid">
+        <article class="exercise-card reveal">
+          <div class="exercise-top"><span>01</span><span>TECHNIQUE</span></div>
+          <div class="exercise-icon">🏐</div>
+          <h3>SERVE PRACTICE</h3>
+          <p>Practice a controlled serve and aim for different areas of the court.</p>
+          <div class="exercise-meta"><span>10–15 min</span><span>Beginner friendly</span></div>
+        </article>
+        <article class="exercise-card reveal">
+          <div class="exercise-top"><span>02</span><span>CONTROL</span></div>
+          <div class="exercise-icon">↗</div>
+          <h3>FOREARM PASS</h3>
+          <p>Practice a stable platform and send the ball towards a target or partner.</p>
+          <div class="exercise-meta"><span>10 min</span><span>Ball control</span></div>
+        </article>
+        <article class="exercise-card reveal">
+          <div class="exercise-top"><span>03</span><span>PRECISION</span></div>
+          <div class="exercise-icon">◎</div>
+          <h3>SETTING DRILL</h3>
+          <p>Work on soft hands and consistent overhead passes with a partner.</p>
+          <div class="exercise-meta"><span>10 min</span><span>Coordination</span></div>
+        </article>
+        <article class="exercise-card reveal">
+          <div class="exercise-top"><span>04</span><span>TEAMWORK</span></div>
+          <div class="exercise-icon">✦</div>
+          <h3>THREE-TOUCH PLAY</h3>
+          <p>Practice receive, set and return with a partner or small group.</p>
+          <div class="exercise-meta"><span>10–15 min</span><span>Team practice</span></div>
+        </article>
+      </div>
+      <p class="safety-note">Warm up first, take water breaks, and adapt drills to your level. Practice jumps and attacks with safe space and proper supervision.</p>
+    </section>
 
-  <div class="program-list">
-    <div><strong>Day 1</strong><span>Service + échauffement</span></div>
-    <div><strong>Day 2</strong><span>Manchette + précision</span></div>
-    <div><strong>Day 3</strong><span>Passe + contrôle du ballon</span></div>
-    <div><strong>Day 4</strong><span>Repos ou activité légère</span></div>
-    <div><strong>Day 5</strong><span>Attaque + déplacements</span></div>
-    <div><strong>Day 6</strong><span>Match amical + travail d'équipe</span></div>
-    <div><strong>Day 7</strong><span>Repos et récupération</span></div>
-  </div>
-  <p class="training-note">
-    Commence par un échauffement, bois de l'eau et adapte les exercices
-    à ton niveau. Arrête-toi si tu ressens une douleur.
-  </p>
-</section>
+    <section class="program-section section-pad" id="program">
+      <div class="section-heading reveal">
+        <span class="eyebrow">05 / YOUR WEEK, YOUR PROGRESS</span>
+        <h2>THE TRAINING <span>PLAN.</span></h2>
+        <p>A flexible seven-day plan with practice, recovery and teamwork.</p>
+      </div>
 
-  <footer>
-    <p>© 2026 VOLLEYZONE</p>
+      <div class="program-list reveal">
+        <div class="program-row"><span class="day">MON <small>DAY 01</small></span><div><strong>Serve + Ball Control</strong><small>Practice accuracy and consistency</small></div><span class="day-symbol">01</span></div>
+        <div class="program-row"><span class="day">TUE <small>DAY 02</small></span><div><strong>Passing + Setting</strong><small>Focus on technique and precision</small></div><span class="day-symbol">02</span></div>
+        <div class="program-row"><span class="day">WED <small>DAY 03</small></span><div><strong>Movement + Footwork</strong><small>Controlled movement and balance</small></div><span class="day-symbol">03</span></div>
+        <div class="program-row recovery"><span class="day">THU <small>DAY 04</small></span><div><strong>Recovery Day</strong><small>Rest or gentle mobility</small></div><span class="day-symbol">↗</span></div>
+        <div class="program-row"><span class="day">FRI <small>DAY 05</small></span><div><strong>Attacking Fundamentals</strong><small>Timing and safe technique</small></div><span class="day-symbol">05</span></div>
+        <div class="program-row"><span class="day">SAT <small>DAY 06</small></span><div><strong>Team Practice</strong><small>Communication and friendly play</small></div><span class="day-symbol">06</span></div>
+        <div class="program-row recovery"><span class="day">SUN <small>DAY 07</small></span><div><strong>Rest + Reflect</strong><small>Recover and review your progress</small></div><span class="day-symbol">↗</span></div>
+      </div>
+      <p class="safety-note">This is a flexible example, not a requirement to train every day. Adjust the workload to your experience and energy.</p>
+    </section>
+
+    <section class="final-cta reveal">
+      <span class="eyebrow">YOUR COURT. YOUR JOURNEY.</span>
+      <h2>READY TO <span>RISE?</span></h2>
+      <p>Great players are built one practice at a time.</p>
+      <a href="#program" class="btn btn-primary">Explore the training plan <span>↑</span></a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="#home"><span class="logo-icon">V</span><span>VOLLEY<span class="accent">ZONE</span></span></a>
+    <p>PLAY WITH PURPOSE. GROW WITH EVERY POINT.</p>
+    <a href="#home" class="back-top">BACK TO TOP ↑</a>
+    <div class="footer-bottom">© 2026 VOLLEYZONE. BUILT FOR THE LOVE OF THE GAME.</div>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
-
-
