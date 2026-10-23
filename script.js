@@ -63,10 +63,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // SUBTLE REVEAL ANIMATIONS
-  const revealItems = document.querySelectorAll(
-    ".stat-card, .rule-row, .skill-card, .exercise-card, " +
-    ".rotation-panel, .rotation-info, .program-list, .day-detail, .final-cta"
-  );
+ const revealItems = document.querySelectorAll(
+  ".hero-content, .hero-image, .hero-visual, .hero-copy, " +
+  ".stat-card, .rule-row, .skill-card, .exercise-card, " +
+  ".rotation-panel, .rotation-info, .program-list, " +
+  ".day-detail, .final-cta"
+);
 
   if ("IntersectionObserver" in window) {
     const revealObserver = new IntersectionObserver(entries => {
