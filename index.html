@@ -1,256 +1,323 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#070b14">
-  <meta name="description" content="VOLLEYZONE — Discover volleyball rules, skills, rotations and training exercises.">
-  <title>VOLLEYZONE | Play Beyond Limits</title>
+  <meta name="theme-color" content="#f5f6f2">
+  <meta name="description" content="VOLLEYZONE — your modern volleyball training dashboard.">
+  <title>VOLLEYZONE — Volleyball Hub</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
 
-  <div class="page-glow"></div>
-
-  <header class="navbar">
-    <a class="logo" href="#home">
-      <span class="logo-icon">V</span>
-      <span>VOLLEY<span class="accent">ZONE</span></span>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#home">
+      <span class="brand-mark">V<span>.</span></span>
+      <span>VOLLEY<span class="brand-light">ZONE</span></span>
     </a>
 
-    <button class="menu-toggle" aria-label="Open navigation"
-      aria-expanded="false" aria-controls="nav-links">
-      <span></span><span></span><span></span>
-    </button>
-
-    <nav class="nav-links" id="nav-links">
-      <a href="#home">Home</a>
-      <a href="#rules">Rules</a>
-      <a href="#skills">Skills</a>
-      <a href="#rotation">Rotation</a>
-      <a href="#exercises">Exercises</a>
-      <a href="#program" class="nav-cta">Training <span>↗</span></a>
+    <div class="side-label">WORKSPACE</div>
+    <nav class="side-nav" aria-label="Main navigation">
+      <a class="nav-link active" href="#home"><span class="nav-icon">▦</span> Dashboard</a>
+      <a class="nav-link" href="#rules"><span class="nav-icon">◈</span> Rules & Basics</a>
+      <a class="nav-link" href="#skills"><span class="nav-icon">✳</span> Skills</a>
+      <a class="nav-link" href="#rotation"><span class="nav-icon">⟳</span> Rotation</a>
+      <a class="nav-link" href="#exercises"><span class="nav-icon">◎</span> Exercises</a>
+      <a class="nav-link" href="#program"><span class="nav-icon">▤</span> Training plan</a>
     </nav>
-  </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-content reveal">
-        <div class="eyebrow"><span class="live-dot"></span> THE VOLLEYBALL HUB</div>
-        <h1>PLAY BEYOND<br><span>LIMITS.</span></h1>
-        <p class="hero-description">
-          Master the game. Sharpen your skills. Own every point.
-          Your volleyball journey starts here.
-        </p>
-        <div class="hero-actions">
-          <a href="#skills" class="btn btn-primary">Explore the game <span>↗</span></a>
-          <a href="#program" class="btn btn-outline">Start training</a>
-        </div>
-        <div class="hero-stats">
-          <div><strong>06</strong><span>PLAYERS / TEAM</span></div>
-          <div><strong>03</strong><span>HITS MAX</span></div>
-          <div><strong>01</strong><span>TEAM. ONE GOAL.</span></div>
-        </div>
+    <div class="sidebar-bottom">
+      <div class="sidebar-tip">
+        <span class="tip-symbol">✦</span>
+        <h3>Small steps.<br>Big progress.</h3>
+        <p>Consistency makes the difference.</p>
+        <a href="#program">Start training ↗</a>
       </div>
+      <div class="sidebar-footer">BUILT FOR THE COURT <span>© 2026</span></div>
+    </div>
+  </aside>
 
-      <div class="hero-visual reveal">
-        <div class="hero-image"></div>
-        <div class="image-overlay"></div>
-        <div class="vertical-label">POWER · PRECISION · PASSION</div>
-        <div class="floating-card">
-          <span class="floating-icon">✦</span>
-          <div><strong>YOUR NEXT LEVEL</strong><small>Starts with practice.</small></div>
-        </div>
-        <div class="hero-number">01<span>/06</span></div>
+  <div class="main-wrap" id="home">
+    <header class="topbar">
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <div class="breadcrumb">Workspace <span>/</span> <strong>Dashboard</strong></div>
+      <div class="topbar-right">
+        <span class="live-dot"></span>
+        <span class="topbar-status">YOUR VOLLEYBALL HUB</span>
+        <div class="avatar">V</div>
       </div>
-      <a class="scroll-cue" href="#rules">SCROLL TO EXPLORE <span>↓</span></a>
-    </section>
+    </header>
 
-    <section class="intro section-pad" id="rules">
-      <div class="section-heading reveal">
-        <span class="eyebrow">01 / THE BASICS</span>
-        <h2>KNOW THE <span>GAME.</span></h2>
-        <p>Understand the fundamentals before you dominate the court.</p>
-      </div>
-
-      <div class="rules-grid">
-        <article class="info-card reveal">
-          <span class="card-number">01</span>
-          <div class="card-icon">🏐</div>
-          <h3>THE TEAMS</h3>
-          <p>Two teams of six players compete on opposite sides of the net.</p>
-        </article>
-        <article class="info-card reveal">
-          <span class="card-number">02</span>
-          <div class="card-icon">↗</div>
-          <h3>THREE HITS</h3>
-          <p>A team can use up to three contacts to return the ball over the net.</p>
-        </article>
-        <article class="info-card reveal">
-          <span class="card-number">03</span>
-          <div class="card-icon">⚡</div>
-          <h3>SCORE POINTS</h3>
-          <p>Win a rally to score a point. Sets are usually played to 25, with a two-point lead.</p>
-        </article>
-        <article class="info-card reveal">
-          <span class="card-number">04</span>
-          <div class="card-icon">↻</div>
-          <h3>ROTATION</h3>
-          <p>When the receiving team wins the rally and gains the serve, players rotate clockwise.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="skills-section section-pad" id="skills">
-      <div class="section-heading reveal">
-        <span class="eyebrow">02 / BUILD YOUR GAME</span>
-        <h2>MASTER THE <span>SKILLS.</span></h2>
-        <p>Every great rally starts with strong fundamentals.</p>
-      </div>
-
-      <div class="skills-grid">
-        <article class="skill-card skill-serve reveal">
-          <span class="skill-tag">01 — SERVE</span>
-          <div class="skill-bottom">
-            <h3>START<br>STRONG.</h3>
-            <p>Develop accuracy, consistency and confidence behind the line.</p>
+    <main class="dashboard">
+      <section class="welcome-section">
+        <div>
+          <div class="eyebrow"><span class="eyebrow-line"></span> YOUR COURT STARTS HERE</div>
+          <h1>Play smarter.<br><span>Get stronger.</span></h1>
+          <p class="welcome-text">Your space to learn the game, sharpen your skills and build your next level.</p>
+          <div class="welcome-actions">
+            <a href="#program" class="btn btn-primary">Explore training <span>↗</span></a>
+            <a href="#rules" class="btn btn-quiet">Learn the basics <span>→</span></a>
           </div>
-        </article>
-        <article class="skill-card skill-pass reveal">
-          <span class="skill-tag">02 — PASS</span>
-          <div class="skill-bottom">
-            <h3>CONTROL<br>THE BALL.</h3>
-            <p>Build a reliable first contact with balanced forearm passing.</p>
-          </div>
-        </article>
-        <article class="skill-card skill-set reveal">
-          <span class="skill-tag">03 — SET</span>
-          <div class="skill-bottom">
-            <h3>CREATE<br>THE PLAY.</h3>
-            <p>Improve hand positioning, timing and accurate ball placement.</p>
-          </div>
-        </article>
-        <article class="skill-card skill-spike reveal">
-          <span class="skill-tag">04 — SPIKE</span>
-          <div class="skill-bottom">
-            <h3>FINISH<br>THE POINT.</h3>
-            <p>Work on your approach, timing and controlled attacking technique.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="rotation-section section-pad" id="rotation">
-      <div class="section-heading reveal">
-        <span class="eyebrow">03 / COURT INTELLIGENCE</span>
-        <h2>OWN YOUR <span>POSITION.</span></h2>
-        <p>Six positions. One rotation. Understand where every player belongs.</p>
-      </div>
-
-      <div class="rotation-layout">
-        <div class="court reveal" aria-label="Volleyball court positions">
-          <div class="court-zone front-zone">
-            <div class="position"><strong>4</strong><span>LEFT FRONT</span></div>
-            <div class="position"><strong>3</strong><span>MIDDLE FRONT</span></div>
-            <div class="position"><strong>2</strong><span>RIGHT FRONT</span></div>
-          </div>
-          <div class="court-zone back-zone">
-            <div class="position"><strong>5</strong><span>LEFT BACK</span></div>
-            <div class="position"><strong>6</strong><span>MIDDLE BACK</span></div>
-            <div class="position"><strong>1</strong><span>RIGHT BACK</span></div>
-          </div>
-          <div class="net-line"><span>THE NET</span></div>
         </div>
 
-        <div class="rotation-info reveal">
-          <span class="eyebrow">THE ROTATION RULE</span>
-          <h3>MOVE AS ONE.</h3>
-          <p>When your team wins the right to serve from the receiving position, everyone rotates one position clockwise.</p>
-          <div class="rotation-step"><span>01</span><div><strong>Position 2 → 1</strong><small>Right front to right back</small></div></div>
-          <div class="rotation-step"><span>02</span><div><strong>Position 1 → 6</strong><small>Right back to middle back</small></div></div>
-          <div class="rotation-step"><span>03</span><div><strong>Continue clockwise</strong><small>6 → 5 → 4 → 3 → 2</small></div></div>
+        <div class="hero-visual">
+          <div class="hero-orbit orbit-one"></div>
+          <div class="hero-orbit orbit-two"></div>
+          <div class="hero-tag"><span class="live-dot"></span> GAME ON</div>
+          <img
+            src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&fit=crop&w=1000&q=85"
+            alt="Volleyball match in action"
+            class="hero-image"
+          >
+          <div class="hero-caption">
+            <div><span class="caption-label">THE MINDSET</span><strong>One more point.</strong></div>
+            <span class="caption-arrow">↗</span>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="exercises-section section-pad" id="exercises">
-      <div class="section-heading reveal">
-        <span class="eyebrow">04 / TRAIN WITH PURPOSE</span>
-        <h2>PUT IN THE <span>WORK.</span></h2>
-        <p>Focused practice builds confidence, control and consistency.</p>
-      </div>
-
-      <div class="exercise-grid">
-        <article class="exercise-card reveal">
-          <div class="exercise-top"><span>01</span><span>TECHNIQUE</span></div>
-          <div class="exercise-icon">🏐</div>
-          <h3>SERVE PRACTICE</h3>
-          <p>Practice a controlled serve and aim for different areas of the court.</p>
-          <div class="exercise-meta"><span>10–15 min</span><span>Beginner friendly</span></div>
+      <section class="stats-grid" aria-label="Volleyball facts">
+        <article class="stat-card">
+          <div class="stat-top"><span>PLAYERS / TEAM</span><span class="stat-icon">♟</span></div>
+          <div class="stat-number">06<span class="stat-unit"> on court</span></div>
+          <p>Six players per team in indoor volleyball.</p>
+          <div class="stat-bottom"><span class="mini-bar"><i style="width:100%"></i></span><span>TEAMWORK</span></div>
         </article>
-        <article class="exercise-card reveal">
-          <div class="exercise-top"><span>02</span><span>CONTROL</span></div>
-          <div class="exercise-icon">↗</div>
-          <h3>FOREARM PASS</h3>
-          <p>Practice a stable platform and send the ball towards a target or partner.</p>
-          <div class="exercise-meta"><span>10 min</span><span>Ball control</span></div>
+        <article class="stat-card">
+          <div class="stat-top"><span>TOUCHES</span><span class="stat-icon">◉</span></div>
+          <div class="stat-number">03<span class="stat-unit"> max</span></div>
+          <p>Usually three team hits before returning the ball.</p>
+          <div class="stat-bottom"><span class="mini-bar"><i style="width:66%"></i></span><span>CONTROL</span></div>
         </article>
-        <article class="exercise-card reveal">
-          <div class="exercise-top"><span>03</span><span>PRECISION</span></div>
-          <div class="exercise-icon">◎</div>
-          <h3>SETTING DRILL</h3>
-          <p>Work on soft hands and consistent overhead passes with a partner.</p>
-          <div class="exercise-meta"><span>10 min</span><span>Coordination</span></div>
+        <article class="stat-card">
+          <div class="stat-top"><span>SETS TO WIN</span><span class="stat-icon">↗</span></div>
+          <div class="stat-number">03<span class="stat-unit"> sets</span></div>
+          <p>Win three sets to take a standard match.</p>
+          <div class="stat-bottom"><span class="mini-bar"><i style="width:60%"></i></span><span>FOCUS</span></div>
         </article>
-        <article class="exercise-card reveal">
-          <div class="exercise-top"><span>04</span><span>TEAMWORK</span></div>
-          <div class="exercise-icon">✦</div>
-          <h3>THREE-TOUCH PLAY</h3>
-          <p>Practice receive, set and return with a partner or small group.</p>
-          <div class="exercise-meta"><span>10–15 min</span><span>Team practice</span></div>
+        <article class="stat-card accent-stat">
+          <div class="stat-top"><span>YOUR NEXT MOVE</span><span class="stat-icon">✦</span></div>
+          <div class="stat-number">01<span class="stat-unit"> step</span></div>
+          <p>Pick one skill and practise it today.</p>
+          <a href="#exercises" class="stat-link">Find an exercise ↗</a>
         </article>
-      </div>
-      <p class="safety-note">Warm up first, take water breaks, and adapt drills to your level. Practice jumps and attacks with safe space and proper supervision.</p>
-    </section>
+      </section>
 
-    <section class="program-section section-pad" id="program">
-      <div class="section-heading reveal">
-        <span class="eyebrow">05 / YOUR WEEK, YOUR PROGRESS</span>
-        <h2>THE TRAINING <span>PLAN.</span></h2>
-        <p>A flexible seven-day plan with practice, recovery and teamwork.</p>
-      </div>
+      <section class="section-block" id="rules">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">THE FUNDAMENTALS</div>
+            <h2>Know the <span>game.</span></h2>
+          </div>
+          <span class="section-index">01 / BASICS</span>
+        </div>
 
-      <div class="program-list reveal">
-        <div class="program-row"><span class="day">MON <small>DAY 01</small></span><div><strong>Serve + Ball Control</strong><small>Practice accuracy and consistency</small></div><span class="day-symbol">01</span></div>
-        <div class="program-row"><span class="day">TUE <small>DAY 02</small></span><div><strong>Passing + Setting</strong><small>Focus on technique and precision</small></div><span class="day-symbol">02</span></div>
-        <div class="program-row"><span class="day">WED <small>DAY 03</small></span><div><strong>Movement + Footwork</strong><small>Controlled movement and balance</small></div><span class="day-symbol">03</span></div>
-        <div class="program-row recovery"><span class="day">THU <small>DAY 04</small></span><div><strong>Recovery Day</strong><small>Rest or gentle mobility</small></div><span class="day-symbol">↗</span></div>
-        <div class="program-row"><span class="day">FRI <small>DAY 05</small></span><div><strong>Attacking Fundamentals</strong><small>Timing and safe technique</small></div><span class="day-symbol">05</span></div>
-        <div class="program-row"><span class="day">SAT <small>DAY 06</small></span><div><strong>Team Practice</strong><small>Communication and friendly play</small></div><span class="day-symbol">06</span></div>
-        <div class="program-row recovery"><span class="day">SUN <small>DAY 07</small></span><div><strong>Rest + Reflect</strong><small>Recover and review your progress</small></div><span class="day-symbol">↗</span></div>
-      </div>
-      <p class="safety-note">This is a flexible example, not a requirement to train every day. Adjust the workload to your experience and energy.</p>
-    </section>
+        <div class="rules-layout">
+          <article class="rules-feature">
+            <div class="rules-feature-top"><span class="pill">THE ESSENTIALS</span><span>01—04</span></div>
+            <h3>Simple rules.<br>Better decisions.</h3>
+            <p>Understand the fundamentals before you step onto the court.</p>
+            <div class="court-mini">
+              <div class="court-net"></div>
+              <div class="court-circle"></div>
+              <span class="court-player cp1"></span><span class="court-player cp2"></span>
+              <span class="court-player cp3"></span><span class="court-player cp4"></span>
+              <span class="court-player cp5"></span><span class="court-player cp6"></span>
+            </div>
+          </article>
 
-    <section class="final-cta reveal">
-      <span class="eyebrow">YOUR COURT. YOUR JOURNEY.</span>
-      <h2>READY TO <span>RISE?</span></h2>
-      <p>Great players are built one practice at a time.</p>
-      <a href="#program" class="btn btn-primary">Explore the training plan <span>↑</span></a>
-    </section>
-  </main>
+          <div class="rule-list">
+            <article class="rule-row">
+              <span class="rule-number">01</span>
+              <div><h3>Scoring</h3><p>Rally scoring is used. A team normally needs 25 points and a two-point lead to win a set; the deciding fifth set is usually played to 15.</p></div>
+              <span class="rule-symbol">↗</span>
+            </article>
+            <article class="rule-row">
+              <span class="rule-number">02</span>
+              <div><h3>Three touches</h3><p>A team may use up to three hits to return the ball, not counting a block touch under the standard rules.</p></div>
+              <span class="rule-symbol">↗</span>
+            </article>
+            <article class="rule-row">
+              <span class="rule-number">03</span>
+              <div><h3>Rotation</h3><p>When the receiving team wins the rally and gains the serve, its players rotate one position clockwise.</p></div>
+              <span class="rule-symbol">↗</span>
+            </article>
+            <article class="rule-row">
+              <span class="rule-number">04</span>
+              <div><h3>Keep it in play</h3><p>Send the ball over the net and inside the boundary lines. Avoid catching, holding or carrying the ball.</p></div>
+              <span class="rule-symbol">↗</span>
+            </article>
+          </div>
+        </div>
+      </section>
 
-  <footer class="footer">
-    <a class="logo" href="#home"><span class="logo-icon">V</span><span>VOLLEY<span class="accent">ZONE</span></span></a>
-    <p>PLAY WITH PURPOSE. GROW WITH EVERY POINT.</p>
-    <a href="#home" class="back-top">BACK TO TOP ↑</a>
-    <div class="footer-bottom">© 2026 VOLLEYZONE. BUILT FOR THE LOVE OF THE GAME.</div>
-  </footer>
+      <section class="section-block" id="skills">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">BUILD YOUR GAME</div>
+            <h2>Master the <span>skills.</span></h2>
+          </div>
+          <span class="section-index">02 / TECHNIQUE</span>
+        </div>
 
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-image skill-img-one"><span class="skill-count">SKILL / 01</span></div>
+            <div class="skill-content"><div class="skill-meta"><span>FOUNDATION</span><span>01</span></div><h3>Passing</h3><p>Build a stable platform with your forearms and direct the ball to your setter.</p><a href="#exercises">Train this skill <span>↗</span></a></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-image skill-img-two"><span class="skill-count">SKILL / 02</span></div>
+            <div class="skill-content"><div class="skill-meta"><span>BALL CONTROL</span><span>02</span></div><h3>Setting</h3><p>Use soft hands, balanced feet and accurate placement to create an attack.</p><a href="#exercises">Train this skill <span>↗</span></a></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-image skill-img-three"><span class="skill-count">SKILL / 03</span></div>
+            <div class="skill-content"><div class="skill-meta"><span>POWER & TIMING</span><span>03</span></div><h3>Spiking</h3><p>Coordinate your approach, jump and arm swing to attack with control.</p><a href="#exercises">Train this skill <span>↗</span></a></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-image skill-img-four"><span class="skill-count">SKILL / 04</span></div>
+            <div class="skill-content"><div class="skill-meta"><span>DEFENCE</span><span>04</span></div><h3>Blocking</h3><p>Read the attacker, time your jump and press your hands over the net.</p><a href="#exercises">Train this skill <span>↗</span></a></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block" id="rotation">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">POSITIONING SYSTEM</div>
+            <h2>Understand the <span>rotation.</span></h2>
+          </div>
+          <span class="section-index">03 / COURT IQ</span>
+        </div>
+
+        <div class="rotation-layout">
+          <article class="rotation-panel">
+            <div class="court-header"><span>INDOOR COURT</span><span>6 POSITIONS</span></div>
+            <div class="court-diagram" aria-label="Volleyball court positions">
+              <div class="court-midline"></div>
+              <div class="court-attack-line attack-left"></div>
+              <div class="court-attack-line attack-right"></div>
+              <div class="court-position pos-4"><span>4</span></div>
+              <div class="court-position pos-3"><span>3</span></div>
+              <div class="court-position pos-2"><span>2</span></div>
+              <div class="court-position pos-5"><span>5</span></div>
+              <div class="court-position pos-6"><span>6</span></div>
+              <div class="court-position pos-1"><span>1</span></div>
+              <div class="rotation-arrow">↻</div>
+            </div>
+            <div class="court-legend"><span><i class="legend-dot front"></i> Front row</span><span><i class="legend-dot back"></i> Back row</span></div>
+          </article>
+
+          <div class="rotation-info">
+            <span class="pill">HOW IT WORKS</span>
+            <h3>Move with purpose.</h3>
+            <p>Players rotate clockwise when their team wins the right to serve from the receiving team.</p>
+            <div class="rotation-step"><span>01</span><div><strong>Start in position</strong><p>Keep the correct rotational order at the moment of service.</p></div></div>
+            <div class="rotation-step"><span>02</span><div><strong>Win the rally</strong><p>If you were receiving and win the rally, your team gains the serve.</p></div></div>
+            <div class="rotation-step"><span>03</span><div><strong>Rotate clockwise</strong><p>Each player moves to the next numbered position before the next serve.</p></div></div>
+            <div class="rotation-note">TIP <span>After the serve, players may move into their tactical positions, following the rules.</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-block" id="exercises">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">PRACTICE WITH PURPOSE</div>
+            <h2>Today's <span>workout.</span></h2>
+          </div>
+          <span class="section-index">04 / DRILLS</span>
+        </div>
+        <p class="section-description">Choose a drill, focus on good technique and track your progress as you go.</p>
+
+        <div class="exercise-grid">
+          <article class="exercise-card">
+            <div class="exercise-icon">↗</div><span class="exercise-level">BEGINNER</span>
+            <h3>Wall passing</h3><p>Practise controlled forearm passes against a wall.</p>
+            <div class="exercise-detail"><span>TIME</span><strong>10 min</strong></div>
+            <button class="complete-btn" data-drill="wall" aria-pressed="false">Mark complete <span>＋</span></button>
+          </article>
+          <article class="exercise-card">
+            <div class="exercise-icon">⌁</div><span class="exercise-level">BEGINNER</span>
+            <h3>Setting control</h3><p>Set the ball upward repeatedly while maintaining balance.</p>
+            <div class="exercise-detail"><span>TIME</span><strong>10 min</strong></div>
+            <button class="complete-btn" data-drill="setting" aria-pressed="false">Mark complete <span>＋</span></button>
+          </article>
+          <article class="exercise-card">
+            <div class="exercise-icon">↟</div><span class="exercise-level">INTERMEDIATE</span>
+            <h3>Approach footwork</h3><p>Rehearse your approach steps without rushing the jump.</p>
+            <div class="exercise-detail"><span>TIME</span><strong>8 min</strong></div>
+            <button class="complete-btn" data-drill="footwork" aria-pressed="false">Mark complete <span>＋</span></button>
+          </article>
+          <article class="exercise-card">
+            <div class="exercise-icon">⌖</div><span class="exercise-level">INTERMEDIATE</span>
+            <h3>Target serving</h3><p>Serve toward a safe, marked target area on the court.</p>
+            <div class="exercise-detail"><span>TIME</span><strong>12 min</strong></div>
+            <button class="complete-btn" data-drill="serving" aria-pressed="false">Mark complete <span>＋</span></button>
+          </article>
+        </div>
+        <div class="progress-strip">
+          <div><strong id="drillProgressText">0 / 4</strong><span>DRILLS COMPLETED</span></div>
+          <div class="progress-track"><span id="drillProgressBar"></span></div>
+          <button id="resetDrills" class="reset-btn">Reset ↺</button>
+        </div>
+      </section>
+
+      <section class="section-block" id="program">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">YOUR WEEK, YOUR PROGRESS</div>
+            <h2>7-day <span>training plan.</span></h2>
+          </div>
+          <span class="section-index">05 / WEEKLY PLAN</span>
+        </div>
+
+        <div class="program-layout">
+          <div class="program-list">
+            <button class="day-row selected" data-day="0"><span class="day-number">01</span><span class="day-main"><strong>Passing fundamentals</strong><small>Ball control · Forearm technique</small></span><span class="day-time">20 min</span><span class="day-chevron">↗</span></button>
+            <button class="day-row" data-day="1"><span class="day-number">02</span><span class="day-main"><strong>Setting & coordination</strong><small>Touch · Accuracy</small></span><span class="day-time">20 min</span><span class="day-chevron">↗</span></button>
+            <button class="day-row" data-day="2"><span class="day-number">03</span><span class="day-main"><strong>Serving practice</strong><small>Consistency · Targeting</small></span><span class="day-time">25 min</span><span class="day-chevron">↗</span></button>
+            <button class="day-row" data-day="3"><span class="day-number">04</span><span class="day-main"><strong>Movement & footwork</strong><small>Balance · Court coverage</small></span><span class="day-time">15 min</span><span class="day-chevron">↗</span></button>
+            <button class="day-row" data-day="4"><span class="day-number">05</span><span class="day-main"><strong>Spiking & approach</strong><small>Timing · Arm swing</small></span><span class="day-time">20 min</span><span class="day-chevron">↗</span></button>
+            <button class="day-row" data-day="5"><span class="day-number">06</span><span class="day-main"><strong>Defence & reaction</strong><small>Reading · Recovery</small></span><span class="day-time">20 min</span><span class="day-chevron">↗</span></button>
+            <button class="day-row" data-day="6"><span class="day-number">07</span><span class="day-main"><strong>Review & recovery</strong><small>Light movement · Reflection</small></span><span class="day-time">15 min</span><span class="day-chevron">↗</span></button>
+          </div>
+
+          <aside class="day-detail">
+            <div class="detail-top"><span class="pill">DAILY SESSION</span><span id="detailDay">DAY 01 / 07</span></div>
+            <div class="detail-illustration"><span class="detail-circle">V<span>.</span></span><span class="detail-lines"></span></div>
+            <h3 id="detailTitle">Passing fundamentals</h3>
+            <p id="detailDescription">Build a reliable first touch with controlled, repeatable technique.</p>
+            <div class="detail-time"><span>ESTIMATED TIME</span><strong id="detailTime">20 minutes</strong></div>
+            <div class="session-list" id="sessionList">
+              <label><input type="checkbox"> <span>Warm-up and mobility</span></label>
+              <label><input type="checkbox"> <span>Practise the main skill</span></label>
+              <label><input type="checkbox"> <span>Cool down and reflect</span></label>
+            </div>
+            <button id="completeDay" class="btn btn-primary full-btn">Complete session <span>✓</span></button>
+          </aside>
+        </div>
+        <p class="training-note">Train safely, warm up first and take rest when needed. Adapt every session to your level and available equipment.</p>
+      </section>
+
+      <section class="final-cta">
+        <div class="cta-orb"></div>
+        <div class="cta-content"><span>YOUR NEXT POINT STARTS NOW</span><h2>Progress is built<br>one <em>practice</em> at a time.</h2><a href="#exercises" class="btn btn-dark">Get on the court <span>↗</span></a></div>
+        <div class="cta-mark">V.</div>
+      </section>
+
+      <footer class="footer">
+        <a class="brand footer-brand" href="#home"><span class="brand-mark">V<span>.</span></span><span>VOLLEY<span class="brand-light">ZONE</span></span></a>
+        <p>Learn the game. Respect the game. Love the game.</p>
+        <a href="#home" class="back-top">BACK TO TOP ↑</a>
+      </footer>
+    </main>
+  </div>
+
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
 </body>
 </html>
