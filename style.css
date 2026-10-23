@@ -2015,3 +2015,95 @@ h1 span,
     grid-column: 3;
   }
 }
+
+/* HERO ENTRANCE ANIMATION */
+
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroImageReveal {
+  from {
+    opacity: 0;
+    transform: translateX(22px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes heroTagReveal {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Text content */
+.js-ready .welcome-section .eyebrow,
+.js-ready .welcome-section h1,
+.js-ready .welcome-section .welcome-text,
+.js-ready .welcome-section .welcome-actions {
+  animation: heroFadeUp 0.7s ease both;
+}
+
+.js-ready .welcome-section h1 {
+  animation-delay: 0.12s;
+}
+
+.js-ready .welcome-section .welcome-text {
+  animation-delay: 0.24s;
+}
+
+.js-ready .welcome-section .welcome-actions {
+  animation-delay: 0.36s;
+}
+
+/* Hero image */
+.js-ready .hero-visual {
+  animation: heroImageReveal 0.85s cubic-bezier(.2,.7,.2,1) both;
+  animation-delay: 0.18s;
+}
+
+/* Floating label */
+.js-ready .hero-tag {
+  animation: heroTagReveal 0.6s ease both;
+  animation-delay: 0.65s;
+}
+
+/* Smooth image zoom on hover */
+.hero-visual .hero-image {
+  transition: transform 0.7s ease;
+}
+
+.hero-visual:hover .hero-image {
+  transform: scale(1.045);
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .js-ready .welcome-section .eyebrow,
+  .js-ready .welcome-section h1,
+  .js-ready .welcome-section .welcome-text,
+  .js-ready .welcome-section .welcome-actions,
+  .js-ready .hero-visual,
+  .js-ready .hero-tag {
+    animation: none;
+  }
+
+  .hero-visual .hero-image {
+    transition: none;
+  }
+}
